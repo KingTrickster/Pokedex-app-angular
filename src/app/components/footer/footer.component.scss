@@ -1,0 +1,12 @@
+@import '../../../assets/styles/variables.scss';
+
+footer{
+  display: flex;
+  flex: 0;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  color: $white;
+  background-color: inherit;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}

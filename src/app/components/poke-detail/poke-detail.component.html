@@ -1,1 +1,15 @@
-<p>poke-detail works!</p>
+<mat-card class="card">
+  <mat-card-header class="mat-card-header">
+    <img mat-card-avatar class="header-image" src="{{ pokemonImage }}" alt="Pokemon-miniature">
+    <mat-card-title class="mat-card-title">{{ pokemon.name }}</mat-card-title>
+    <mat-card-subtitle>No. {{ pokemon.id }}</mat-card-subtitle>
+  </mat-card-header>
+  <img mat-card-image src="{{ pokemonImage }}" alt="Pokemon" />
+  <mat-card-content>
+    <mat-chip-listbox aria-label="select a shirt size">
+      <mat-chip class="mat-chip" color="primary" selected=>Type: {{pokemonType}} </mat-chip>
+      <mat-chip class="mat-chip" color="primary" selected=>Height: {{pokemon.height}} </mat-chip>
+      <mat-chip class="mat-chip" color="primary" selected=>Weight: {{pokemon.weight}} </mat-chip>
+    </mat-chip-listbox>
+  </mat-card-content>
+</mat-card>

@@ -1,0 +1,60 @@
+@import "../../../assets/styles/variables.scss";
+
+.container{
+  width: 100%;
+  margin-top: 20px;
+  text-align: center;
+}
+
+table{
+  min-width: 80%;
+  margin: auto;
+  text-align: center;
+
+}
+
+.mat-header-cell{
+  color: $white;
+  font-size: 15px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.mat-cell{
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.mat-row:nth-child(even){
+  background-color: $green;
+}
+
+.mat-row:nth-child(odd){
+  background-color: $blue;
+  & .mat-cell{
+    color: $white;
+  }
+}
+
+.mat-row:hover{
+  & .mat-cell{
+    color: $black;
+  }
+}
+
+.paginator{
+  background: #b92b27;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #1565C0, #b92b27);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #1565C0, #b92b27);
+  color: black;
+}
+
+.mat-mdc-header-row{
+  background-color: $black;
+}
+
+::ng-deep.paginator{
+  width: 80%;
+  margin: auto;
+}
